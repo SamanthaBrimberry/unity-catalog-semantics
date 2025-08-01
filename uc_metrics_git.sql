@@ -22,7 +22,7 @@ dimensions:
     expr: PastSkipPass
   
   - name: Month
-    expr: DateTrunc('MONTH', LastVisitDate)
+    expr: date_trunc('month', LastVisitDate)
 
 measures:
   - name: UniqueVisitors
